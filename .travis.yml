@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t ElioLopez/docker-react -f Dockerfile.dev .
+  - docker build -t elio-docker-react -f Dockerfile.dev .
 
 script:
-  - docker run ElioLopez/docker-react npm run test -- --covergage
+  - docker run elio-docker-react npm run test -- --covergage
